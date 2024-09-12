@@ -1,0 +1,1 @@
+web: gunicorn olena_aiz.wsgi --log-file - --log-level debug

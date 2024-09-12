@@ -32,7 +32,7 @@ DB_PASSWORD = os.environ.get('DB_PASSWORD'),
 DB_HOST = os.environ.get('DB_HOST'),
 DB_PORT = os.environ.get('DATABASE_URL'),
 DATABASE_URL = os.environ.get('DATABASE_URL')
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', True)
 ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOSTS', '*')]
 
 INSTALLED_APPS = [
